@@ -3,12 +3,13 @@
 
 [![ERPNext Version](https://img.shields.io/badge/ERPNext-v15.x-blue.svg)](https://erpnext.com)
 [![Frappe Framework](https://img.shields.io/badge/Frappe-v15.x-orange.svg)](https://frappe.io)
+[![Release Version](https://img.shields.io/badge/Release-v1.0.0-brightgreen.svg)](https://github.com/Orphic-Studios/erpnext-agent-skills/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Standard](https://img.shields.io/badge/Standard-Vanilla%20Standard-success.svg)](#)
 
 ---
 
-## 📖 Overview | نظرة عامة
+## 📖 Overview
 This repository provides an enterprise-grade suite of **37 specialized AI Agent Skills** adhering to open agent standards (`SKILL.md`). It transforms any modern AI coding or conversational agent into an **expert ERPNext v15 consultant, analyst, executor, and instructor**.
 
 The suite is divided into three architectural layers:

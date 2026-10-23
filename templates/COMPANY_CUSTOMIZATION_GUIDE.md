@@ -23,7 +23,7 @@ Save a copy of this file in your project or repository as:
 
 ---
 
-## 1. Custom Fields Inventory (الحقول المخصصة)
+## 1. Custom Fields Inventory
 Add any custom fields added via "Customize Form" or Custom Apps.
 
 | Target DocType | Fieldname (ID) | Label | Type | Mandatory? | Default / Formula / Options | Notes & Purpose |
@@ -35,7 +35,7 @@ Add any custom fields added via "Customize Form" or Custom Apps.
 
 ---
 
-## 2. Custom DocTypes (الجداول والمستندات المخصصة)
+## 2. Custom DocTypes
 List newly created DocTypes created via "Build > DocType".
 
 ### DocType: `Company Fleet Inspection`
@@ -51,7 +51,7 @@ List newly created DocTypes created via "Build > DocType".
 
 ---
 
-## 3. Workflow & Approval Matrix (سلاسل الاعتماد والسياسات الداخلية)
+## 3. Workflow & Approval Matrix
 Override standard single-step submissions with company multi-tier approvals.
 
 | DocType | Value / Condition | Required Approver Role | Next State | Action on Rejection |
@@ -63,7 +63,7 @@ Override standard single-step submissions with company multi-tier approvals.
 
 ---
 
-## 4. Custom Scripts & Business Rules (قواعد العمل المخصصة)
+## 4. Custom Scripts & Business Rules
 Summarize Client Scripts or Server Scripts so the AI agent accounts for them:
 
 - **Server Script on `Sales Invoice` Before Submit**:
@@ -73,7 +73,7 @@ Summarize Client Scripts or Server Scripts so the AI agent accounts for them:
 
 ---
 
-## 5. Security & Sensitive Field Restrictions (قيود الخصوصية)
+## 5. Security & Sensitive Field Restrictions
 - Fields that the AI agent must **never display or log in plaintext**:
   - `bank_account_no`
   - `tax_id` (partial mask allowed)
