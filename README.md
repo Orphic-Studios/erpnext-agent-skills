@@ -84,7 +84,7 @@ erpnext-agent-skills/
 ### 1. Antigravity & Claude Code
 Clone the repository into your workspace skills directory or link individual folders:
 ```bash
-git clone https://github.com/YOUR_USERNAME/erpnext-agent-skills.git
+git clone https://github.com/Orphic-Studios/erpnext-agent-skills.git
 ```
 To enable all skills, add the skill paths to your workspace configuration or point your agent prompt to the repository root.
 

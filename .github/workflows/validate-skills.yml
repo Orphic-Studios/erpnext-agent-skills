@@ -1,0 +1,38 @@
+name: Validate Agent Skills & Code
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile client-tools/frappe_client.py
+
+      - name: Check SKILL.md Frontmatter Presence
+        run: |
+          python -c "
+          import os, glob
+          skills = glob.glob('**/SKILL.md', recursive=True)
+          assert len(skills) >= 37, f'Expected at least 37 skills, found {len(skills)}'
+          for s in skills:
+              with open(s, 'r', encoding='utf-8') as f:
+                  content = f.read()
+                  assert content.startswith('---'), f'{s} missing YAML frontmatter opening'
+                  assert 'name:' in content, f'{s} missing name field'
+                  assert 'description:' in content, f'{s} missing description field'
+          print(f'Successfully validated {len(skills)} skills!')
+          "
